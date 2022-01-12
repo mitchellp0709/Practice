@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/57ee31c5e77282c24d000024/train/javascript
+
 function paul(x) {
   let score = 0;
   for (y of x) {
@@ -24,4 +26,15 @@ function paul(x) {
 
 }
 
-console.log(paul(['life','eating','life']))
+//
+
+function countSheeps(arrayOfSheep) {
+  let count = 0;
+  for (x of arrayOfSheep) {
+    if (x == true) {
+     count++
+   }
+  }
+  return count
+}
+
