@@ -26,7 +26,7 @@ function paul(x) {
 
 }
 
-//
+//https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
 
 function countSheeps(arrayOfSheep) {
   let count = 0;
@@ -38,3 +38,11 @@ function countSheeps(arrayOfSheep) {
   return count
 }
 
+// https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/javascript
+
+function sumTwoSmallestNumbers(numbers) {
+  const s = numbers.sort((a,b)=>{return a-b});
+  console.log(s)
+  return s[0] + s[1];
+}
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
