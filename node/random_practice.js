@@ -38,18 +38,44 @@
 // console.log(bubbleSort([12, 6, 3, 7, 13, 8,0,70,100,-1]));
 
 
-function insertionSort(array) {
+// function insertionSort(array) {
   
-  for (let i = 1; i < array.length; i++) {
-    let value = array[i] 
-    let j = i - 1; 
-    while ((j > -1) && (value < array[j])) {
-      array[j + 1] = array[j]
-      j--
-    }
-    array[j+1]=value
-  }
+//   for (let i = 1; i < array.length; i++) {
+//     let value = array[i] 
+//     let j = i - 1; 
+//     while ((j > -1) && (value < array[j])) {
+//       array[j + 1] = array[j]
+//       j--
+//     }
+//     array[j+1]=value
+//   }
 
-  return array
+//   return array
+// }
+// console.log(insertionSort([12, 6, 3, 7, 13, 8, 0, 70, 100, -1]));
+
+
+const bucketSort = (array) => {
+  const first = []
+  const second = []
+  const third = []
+
+  for (num of array) {
+    if (num <= 3) {
+      first.push(num)
+    } else if (num > 3 && num <= 6) {
+      second.push(num)
+    } else {
+      third.push(num)
+    }
+  }
+  first.sort((a, b) => a - b)
+  second.sort((a, b) => a - b);
+  third.sort((a, b) => a - b);
+  let finalArray = []
+  finalArray = first.concat(second)
+  finalArray=finalArray.concat(third)
+  return finalArray
 }
-console.log(insertionSort([12, 6, 3, 7, 13, 8, 0, 70, 100, -1]));
+
+console.log (bucketSort([12,6,3,7,13,8]))
