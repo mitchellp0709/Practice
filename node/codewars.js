@@ -60,3 +60,19 @@
 // }
 
 // console.log(findUniq([1, 1, 1, 2, 1, 1]));
+
+
+//https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript
+
+// function squareDigits(num) {
+//   let spl = num.toString().split("")
+//   spl = spl.map((x) => {
+//     parseInt(x)
+//     return Math.pow(x,2)
+//   })
+//   spl = spl.join("")
+//   return parseInt(spl)
+//   console.log(spl)
+// }
+
+// console.log(squareDigits(1234))
