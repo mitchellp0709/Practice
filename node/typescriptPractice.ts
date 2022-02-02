@@ -62,3 +62,27 @@ const value:string = "expensive"
 // cheese3 = value === "expensive" ? "manchego" : "american"
 
 // console.log(cheese3)
+
+const myArran: Array<object> = [
+  {
+    a: "a",
+    b: "b",
+  },
+  {
+    c: "c",
+    d: "d",
+  },
+];
+
+console.log(myArran[0])
+
+interface StudentInterface {
+  name: String,
+  age:Number
+}
+
+const Tim: StudentInterface = {
+  name: "Tim",
+  age: 14
+}
+console.log(Tim.name)
