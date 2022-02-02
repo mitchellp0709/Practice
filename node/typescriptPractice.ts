@@ -36,3 +36,29 @@ myString = "five" + "cheese"
 console.log(myString)
 myString = `${num} cheese`
 console.log(myString)
+
+
+
+///////////////////////////
+// Conditionals
+///////////////////////////
+
+let cheese2: string
+const value:string = "expensive"
+
+// switch (value) {
+//   case "expensive":
+//     cheese2 = "manchego"
+//     console.log(cheese2)
+//     break
+//   case "medium":
+//     cheese2 = "gouda"
+//     console.log(cheese2);
+//     break
+// }
+
+
+// let cheese3: string
+// cheese3 = value === "expensive" ? "manchego" : "american"
+
+// console.log(cheese3)
