@@ -1,3 +1,6 @@
+from audioop import add
+
+
 num = -9
 
 print(f"the value is {num}")
@@ -35,3 +38,8 @@ my_directory = {
 print(my_directory)
 print (my_directory["cheese"])
 print(my_directory["number"])
+
+def add_nums (x,y):
+  return x + y
+
+print(add_nums(5,2))
