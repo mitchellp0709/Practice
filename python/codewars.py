@@ -36,21 +36,44 @@
 
 #https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/python
 
-def find_outliers(integers):
-  counter = 0
-  evens = 0
-  while(counter<=2):
-    if(integers[counter]%2==0):
-      evens+=1
-    counter+=1
+# def find_outliers(integers):
+#   counter = 0
+#   evens = 0
+#   while(counter<=2):
+#     if(integers[counter]%2==0):
+#       evens+=1
+#     counter+=1
   
-  if(evens>1):
-    for x in integers:
-      if(x%2!=0):
-        return x
-  else: 
-    for x in integers:
-      if(x%2==0):
-        return x
+#   if(evens>1):
+#     for x in integers:
+#       if(x%2!=0):
+#         return x
+#   else: 
+#     for x in integers:
+#       if(x%2==0):
+#         return x
 
-print(find_outliers([1,1,4]))
+# print(find_outliers([1,1,4]))
+
+# https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python
+
+def sort_array(source_array):
+  odds = []
+  indicies = []
+  counter = 0
+  for x in source_array:
+    if(x % 2 != 0):
+      odds.append(x)
+      indicies.append(source_array.index(x,counter))
+    counter+=1
+  odds = sorted(odds)
+  counter=0
+  while(counter<len(odds)):
+    source_array[indicies[counter]] = odds[counter]
+    counter+=1
+  print(odds, indicies)
+  return source_array
+
+nums=[-34, -41, -4, -46, -37, 30, -31, -27, -27, 9, -21, -3, 38, 0, -27, 48, -12, -27, 19, 31, 33, 33]
+print (sort_array(nums))
+
