@@ -57,6 +57,8 @@
 
 # https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python
 
+######### Look at these answers, they're super helpful ##############
+
 def sort_array(source_array):
   odds = []
   indicies = []
